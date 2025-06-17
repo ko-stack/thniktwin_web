@@ -271,14 +271,73 @@
         box-shadow: 0 5px 20px rgba(26, 35, 126, 0.3);
     }
 
-    /* Footer */
-    .footer {
+    /* Footer Styles */
+.footer {
+    background: rgba(26, 35, 126, 0.95);
+    color: white;
+    padding: 60px 0 20px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.company-info h3,
+.contact-info h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.company-info p,
+.contact-info p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
         text-align: center;
-        padding: 40px 0;
-        color: #1a237e;
-        font-size: 14px;
-        background: rgba(255, 255, 255, 0.8);
     }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+}
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -332,58 +391,66 @@
     <main class="main-content">
         <div class="container">
             <!-- Hero Section -->
-            <section class="hero">
-                <h1>ThinkTwin</h1>
-                <p class="tagline"><ul>• Your Knowledge</ul><ul>• Your Ideas</ul><ul>• Your <span class="ai-red">AI</span> Twin</ul><br></p>
-                <p class="section">
-                    Imagine an AI assistant that doesn't just respond to your questions – it learns your patterns, 
-                    remembers your entire project history, and evolves alongside your work. ThinkTwin is more than 
-                    another AI tool; it's your personalized digital mastermind that grows smarter with every interaction.
-                </p>
-            </section>
+            html<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to ThinkTwin</h1>
+    <p class="tagline">Your Knowledge <span class="bullet">•</span> Your Ideas <span class="bullet">•</span> Your <span class="ai-red">AI</span> Twin</p>
+    <p class="intro-text">
+        Imagine having a dedicated AI assistant that truly understands your work. 
+        One that remembers your preferences, learns from your experience, and helps 
+        you work smarter, not harder.
+    </p>
+</section>
 
-            <!-- Living Memory Section -->
-            <section class="section">
-                <h2>Your Project's Living Memory</h2>
-                <p>
-                    ThinkTwin remembers every detail of your project – from initial concepts to final refinements. 
-                    Whether you're writing a novel, developing a business strategy, conducting research, or building 
-                    a product, it learns from every decision you make and understands why certain approaches 
-                    succeeded or failed.
-                </p>
-                <p>
-                    When you revised that chapter, refined that design, or pivoted your strategy, ThinkTwin learned why. 
-                    It ensures you never repeat the same mistakes twice and builds on what works. As your project evolves, 
-                    so does your AI twin – becoming the institutional memory that never forgets and the advisor who truly 
-                    understands your project's unique journey.
-                </p>
-            </section>
+<!-- The Challenge Section -->
+<section class="section">
+    <h2>The Challenge We Solve</h2>
+    <p>
+        Every project has its own context, history, and unique requirements. 
+        Generic AI tools treat every conversation as new, forcing you to explain 
+        everything from scratch, every single time.
+    </p>
+    <p>
+        Important details get lost. Past decisions are forgotten. You find yourself 
+        repeating the same explanations and making the same corrections over and over again.
+    </p>
+</section>
 
-            <!-- Personal Mastermind Section -->
-            <section class="section">
-                <h2>Your Personal AI Mastermind – Serving Only You</h2>
-                <p>
-                    This isn't a shared AI serving millions. This is YOUR AI, dedicated solely to YOUR work. 
-                    It thinks like you, adapts to your methods, and guards your ideas like you would. 
-                    Every insight it gains serves one purpose: making you more effective in your unique domain.
-                </p>
-            </section>
+<!-- Your Intelligent Partner Section -->
+<section class="section">
+    <h2>Your Intelligent Partner</h2>
+    <p>
+        ThinkTwin changes everything. It's an AI assistant that actually remembers 
+        your project's journey and understands your specific context.
+    </p>
+    <p>
+        <strong>Continuous Understanding:</strong> No more starting from zero. Your AI twin maintains context across all interactions.
+    </p>
+    <p>
+        <strong>Personalized Assistance:</strong> Get responses tailored to your specific project, your terminology, and your goals.
+    </p>
+    <p>
+        <strong>Private & Secure:</strong> Your project intelligence stays yours. Complete control over your data and ideas.
+    </p>
+</section>
 
-            <!-- Privacy Section -->
-            <section class="section">
-                <h2>100% Local. 100% Private. 100% Yours.</h2>
-                <p>
-                    Your innovations stay on your machine. Your strategies remain confidential. 
-                    Your competitive advantages are never uploaded, analyzed, or shared. 
-                    ThinkTwin operates entirely on your local system – because your project's 
-                    intelligence should belong to you alone.
-                </p>
-            </section>
+<!-- Perfect For Section -->
+<section class="section">
+    <h2>Perfect For</h2>
+    <p>
+        • <strong>Project Managers</strong> who need consistent project understanding<br>
+        • <strong>Researchers</strong> working with complex, evolving information<br>
+        • <strong>Consultants</strong> managing multiple client contexts<br>
+        • <strong>Developers</strong> maintaining long-term codebases<br>
+        • <strong>Writers</strong> working on extensive documents or series<br>
+        • <strong>Anyone</strong> who values their time and intellectual property
+    </p>
+</section>
 
-            <!-- Coming Soon -->
-            <div class="coming-soon">
-                Coming Soon!
-            </div>
+<!-- Coming Soon -->
+<div class="coming-soon">
+    Coming Soon!
+</div>
         </div>
 
         <!-- Contact Section -->
@@ -423,9 +490,28 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 ThinkTwin.ai. All rights reserved.</p>
-    </footer>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>ThinkTwin<span class="ai-red">.ai</span></h3>
+                <p><strong>ThinkTwin OÜ</strong></p>
+                <p>Valukoja tn 8/2<br>
+                Tallinn, 11415<br>
+                Estonia</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>Phone: <a href="tel:+37255555153">+372 55 555 153</a></p>
+                <p>Email: <a href="mailto:info@thinktwin.ai">info@thinktwin.ai</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ThinkTwin OÜ. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
     <script>
     // Formspree automaatselt haldab vormi saatmist
